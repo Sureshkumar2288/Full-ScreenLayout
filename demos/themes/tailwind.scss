@@ -1,0 +1,13 @@
+@import 'ej2-base/styles/tailwind.scss';
+@import 'ej2-buttons/styles/tailwind.scss';
+@import 'ej2-popups/styles/tailwind.scss';
+@import 'ej2-inputs/styles/tailwind.scss';
+@import 'ej2-lists/styles/tailwind.scss';
+@import 'ej2-splitbuttons/styles/tailwind.scss';
+
+// Local dependent component styles from current repository
+@import '../../styles/calendar/tailwind.scss';
+@import '../../styles/datepicker/tailwind.scss';
+
+// Your main component styles from current repository 
+@import '../../styles/tailwind.scss';

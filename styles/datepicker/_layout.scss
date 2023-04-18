@@ -1,0 +1,269 @@
+@include export-module('datepicker-layout') {
+
+  .e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+  .e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+    display: flex;
+  }
+
+  .e-date-wrapper:not(.e-filled) {
+    #{if(&, '&', '*')} .e-date-icon.e-icons {
+      @if $skin-name == 'material' or $skin-name == 'material-dark' or $skin-name == 'Material3' {
+        box-sizing: $datepicker-box-sizing;
+      }
+    }
+  }
+
+  #{&}.e-datepicker.e-bigger,
+  .e-bigger #{&}.e-datepicker {
+    #{if(&, '&', '*')}.e-popup-wrapper {
+      @if $skin-name == 'tailwind' {
+        margin-top: $datepicker-popup-bigger-margin-top;
+      }
+    }
+  }
+
+  #{&}.e-datepicker {
+    #{if(&, '&', '*')} .e-calendar {
+
+      #{if(&, '&', '*')} .e-content table tbody tr.e-month-hide:last-child {
+        display: $datepicker-othermonth-row;
+      }
+    }
+
+    #{if(&, '&', '*')}.e-popup-wrapper {
+      border-radius: $datepicker-popup-border-radius;
+      overflow-y: hidden;
+      pointer-events: auto;
+    }
+
+    #{if(&, '&', '*')}.e-date-modal {
+      @if $skin-name != 'Material3' {
+        background-color: $datepicker-overlay;
+      }
+      @if $skin-name == 'Material3' {
+        background: $datepicker-overlay;
+      }
+      height: 100%;
+      left: 0;
+      opacity: .5;
+      pointer-events: auto;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    #{if(&, '&', '*')} .e-model-header {
+      @if $skin-name != 'Material3' {
+        background-color: $datepicker-modal-header-bg;
+      }
+      @if $skin-name == 'Material3' {
+        background: $datepicker-modal-header-bg;
+      }
+      color: $datepicker-modal-header-color;
+      cursor: default;
+      display: $datepicker-modal-header-display;
+      padding: $model-portrait-header-padding;
+
+      #{if(&, '&', '*')} .e-model-year {
+        font-size: $model-year-font-size;
+        font-weight: $model-year-font-weight;
+        line-height: $model-year-line-height;
+        margin: $model-header-year-margin;
+      }
+    }
+
+    #{if(&, '&', '*')} .e-model-month,
+    #{if(&, '&', '*')} .e-model-day {
+      font-size: $model-month-font-size;
+      font-weight: $model-month-font-weight;
+      line-height: $model-month-line-height;
+      margin: $model-header-day-margin;
+    }
+  }
+}
+
+/* stylelint-disable */
+.e-date-overflow {
+  overflow: hidden !important;
+}
+
+.e-datepick-mob-popup-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+
+  .e-datepicker.e-popup-wrapper.e-lib.e-popup.e-control.e-popup-open {
+    position: relative;
+    top:0 !important;
+    left: 0 !important;
+  }
+
+  .e-datepicker.e-popup-wrapper.e-popup-expand.e-lib.e-popup.e-control.e-popup-open {
+    min-width: 100vmin;
+    min-height:100vmin;
+  }
+
+}
+
+.e-content-placeholder.e-datepicker.e-placeholder-datepicker {
+  background-size: 250px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-datepicker.e-placeholder-datepicker,
+.e-bigger.e-content-placeholder.e-datepicker.e-placeholder-datepicker {
+  background-size: 250px 40px;
+  min-height: 40px;
+}
+
+
+.e-datepick-mob-popup-wrap {
+  
+  #{if(&, '&', '*')} .e-datepicker.e-popup-expand {
+
+    #{if(&, '&', '*')} .e-model-header {
+      height: $model-portrait-header-height;
+
+      #{if(&, '&', '*')} .e-popup-close {
+        color: $model-portrait-cancel-icon-color;
+        float: $model-portrait-cancel-icon-float-style;
+        font-size: $datepicker-bigger-icon-font-size;
+        padding: $model-portrait-cancel-icon-padding;
+      }
+
+      #{if(&, '&', '*')} .e-today {
+        float: $model-portrait-today-float-style;
+      }
+    }
+
+    #{if(&, '&', '*')} .e-calendar {
+      min-width: $model-portrait-calendar-min-width;
+      min-height: $model-portrait-calendar-min-height;
+      height: $model-portrait-calendar-height;
+      @if $skin-name == 'bootstrap' {
+        padding: $model-portrait-calendar-padding;
+      }
+      
+      #{if(&, '&', '*')} .e-header.e-month,
+      #{if(&, '&', '*')} .e-header.e-year,
+      #{if(&, '&', '*')} .e-header.e-decade {
+        height: $model-portrait-header-month-height;
+        border-style: $modal-header-border-style;
+        border-width: $model-header-border-width;
+        border-color: $model-header-border-color;
+        padding: $model-portrait-month-header-padding;
+
+        #{if(&, '&', '*')} .e-title {
+          margin-left: $model-portrait-header-title-margin;
+          position: $model-portrait-header-title-position;
+          text-align: $model-portrait-header-title-text;
+          width: $model-portrait-header-title-width;
+        }
+
+        #{if(&, '&', '*')} .e-prev {
+          margin-right: $model-portrait-prev-icon-margin;
+        }
+
+        #{if(&, '&', '*')} .e-next {
+          margin-right: $model-portrait-next-icon-margin;
+        }
+      }
+
+    }
+
+  #{if(&, '&', '*')} .e-calendar-cell-container {
+    height: $model-portrait-calendar-container-height;
+  }
+
+  .e-footer-container
+  {
+    display: $model-portrait-footer-display-style;
+  }
+
+  #{if(&, '&', '*')} .e-content.e-month
+  {
+    height: $model-portrait-calendar-content-height;
+    table
+    {
+    height: $model-portrait-calendar-tabel-height;
+    }
+
+  }
+
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 360px) {
+
+  .e-datepicker .e-calendar.e-device .e-month table tbody {
+    display: inline-block;
+    height: $datepicker-calendar-tbody-landscape-height;
+    overflow: auto;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .e-datepick-mob-popup-wrap {
+    #{if(&, '&', '*')} .e-datepicker.e-popup-expand {
+      #{if(&, '&', '*')} .e-model-header {
+
+        height: $model-landscape-header-height;
+        width: $datepicker-model-popup-landscape-max-width;
+
+        .e-popup-close {
+          float: $model-portrait-cancel-icon-float-style;
+          padding: $model-portrait-cancel-icon-padding;
+        }
+
+        .e-model-year {
+          margin: $model-landscape-header-year-margin;
+        }
+
+      }
+
+      #{if(&, '&', '*')} .e-calendar .e-header.e-month,
+      #{if(&, '&', '*')} .e-calendar .e-header.e-year,
+      #{if(&, '&', '*')} .e-calendar .e-header.e-decade {
+
+        #{if(&, '&', '*')} .e-prev {
+          margin-right: $model-landscape-prev-icon-margin;
+        }
+      }
+
+      .e-content.e-month {
+        height: $model-landscape-calendar-content-height;
+      }
+
+      .e-calendar {
+        display: $datepicker-modal-header-display;
+        max-width: $datepicker-model-popup-landscape-max-width;
+      }
+
+      .e-calendar-cell-container {
+        float: right;
+        height: 90%;
+        width: 70%;
+      }
+
+      .e-calendar.e-device .e-month table tbody {
+        display: table-row-group;
+      }
+
+      #{if(&, '&', '*')} .e-content.e-month table ,
+      #{if(&, '&', '*')} .e-content.e-decade table ,
+      #{if(&, '&', '*')} .e-content.e-year table {
+        height: $model-portrait-calendar-content-height;
+      }
+    }
+}
+}
+/* stylelint-enable */

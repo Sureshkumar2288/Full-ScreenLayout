@@ -1,0 +1,13 @@
+@import 'ej2-base/styles/fluent-dark.scss';
+@import 'ej2-buttons/styles/fluent-dark.scss';
+@import 'ej2-popups/styles/fluent-dark.scss';
+@import 'ej2-inputs/styles/fluent-dark.scss';
+@import 'ej2-lists/styles/fluent-dark.scss';
+@import 'ej2-splitbuttons/styles/fluent-dark.scss';
+
+// Local dependent component styles from current repository
+@import '../../styles/calendar/fluent-dark.scss';
+@import '../../styles/datepicker/fluent-dark.scss';
+
+// Your main component styles from current repository 
+@import '../../styles/fluent-dark.scss';

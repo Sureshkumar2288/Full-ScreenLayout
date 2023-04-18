@@ -1,0 +1,75 @@
+$datepicker-icon-color: none !default;
+$datepicker-active-icon-color: $datepicker-icon-color !default;
+$datepicker-popup-box-shadow: 0 6px 12px rgba($grey-base, .175) !default;
+$datepicker-input-border-style: none !default;
+$datepicker-popup-bg-color: $grey-white !default;
+$datepicker-popup-border-radius: 4px !default;
+$datepicker-calendar-border-style: none !default;
+$datepicker-icon: '\e960' !default;
+$datepicker-popup-border: 1px solid $grey-cc !default;
+$datepicker-icon-font-size: 16px !default;
+$datepicker-bigger-icon-font-size: 18px !default;
+$datepicker-overlay: rgba($grey-base, .6) !default;
+$datepicker-icon-normal-margin: 0 !default;
+$datepicker-icon-bigger-margin: 0 !default;
+$datepicker-icon-hover-color: $grey-e6 !default;
+$datepicker-icon-border-radius: 0 !default;
+$datepicker-box-sizing: border-box !default;
+$datepicker-othermonth-row: table-row !default;
+$datepicker-modal-header-bg: $datepicker-popup-bg-color !default;
+$datepicker-modal-header-color: $grey-light-font !default;
+$datepicker-modal-header-display: block !default;
+$datepicker-calendar-tbody-landscape-height: 150px !default;
+
+// mouse small icon
+$datepicker-small-icon-font-size: 14px !default;
+
+// Touch small icon
+$datepicker-bigger-small-icon-font-size: 18px !default;
+$model-year-font-size: 18px !default;
+$model-header-year-margin: 7vh 0 0 0 !default;
+$model-header-day-margin: 0 !default;
+$model-year-font-weight: 500 !default;
+$model-year-line-height: 32px !default;
+$model-month-font-size: 18px !default;
+$model-month-font-weight: 500 !default;
+$model-month-line-height: 32px !default;
+$model-portrait-header-padding: 12px !default;
+$model-portrait-calendar-padding: 0 !default;
+$model-portrait-month-header-padding: 22px 12px !default;
+
+$modal-header-border-style: solid !default;
+$model-header-border-width: 1px 0 !default;
+$model-header-border-color: rgba($grey-base, .15) !default;
+
+// Touch model popup cancel icon style
+$model-portrait-cancel-icon-float-style: left !default;
+$model-portrait-cancel-icon-padding: 2px !default;
+$model-portrait-prev-icon-margin: 70vw !default;
+$model-portrait-next-icon-margin: 3vw !default;
+$model-portrait-header-title-margin: -25vw !default;
+$model-portrait-header-title-position: absolute !default;
+$model-portrait-header-title-text: center !default;
+$model-portrait-header-title-width: 50vw !default;
+$model-portrait-cancel-icon-color: $grey-light-font !default;
+
+//Touch model popup today styles
+$model-portrait-today-float-style: right !default;
+$model-portrait-footer-display-style: none !default;
+
+// Touch model popup styles
+$model-portrait-header-height: 20vh !default;
+$model-portrait-header-month-height: 10vh !default;
+$model-portrait-calendar-container-height: 85vh !default;
+$model-portrait-calendar-min-height: 100vmin !default;
+$model-portrait-calendar-min-width: 100vmin !default;
+$model-portrait-calendar-height: 100vh !default;
+$model-portrait-calendar-content-height: 70vh !default;
+$model-portrait-calendar-tabel-height: 70vh !default;
+
+// Touch model popup landscape styles
+$datepicker-model-popup-landscape-max-width: 100vw !default;
+$model-landscape-header-height: 30vh !default;
+$model-landscape-calendar-content-height: 60vh !default;
+$model-landscape-header-year-margin: 8vh 0 0 0 !default;
+$model-landscape-prev-icon-margin: 80vw !default;

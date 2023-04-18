@@ -1,0 +1,86 @@
+//default
+$datepicker-icon: '\e901' !default;
+$datepicker-icon-font-size: 16px !default;
+$datepicker-icon-container-min-height: 18px !default;
+$datepicker-icon-container-min-width: 30px !default;
+$datepicker-bigger-icon-container-min-height: 18px !default;
+$datepicker-bigger-icon-container-min-width: 36px !default;
+$datepicker-bigger-icon-font-size: 18px !default;
+$datepicker-icon-normal-margin: 0 !default;
+$datepicker-icon-bigger-margin: 0 !default;
+$datepicker-icon-border-radius: 50% !default;
+$datepicker-popup-border-radius: 6px !default;
+$datepicker-box-sizing: border-box !default;
+$datepicker-modal-header-display: block !default;
+$datepicker-calendar-tbody-landscape-height: 130px !default;
+$datepicker-popup-bigger-margin-top: 8px !default;
+
+// mouse small icon
+$datepicker-small-icon-font-size: 16px !default;
+
+// Touch small icon
+$datepicker-bigger-small-icon-font-size: 20px !default;
+
+// color variables
+$datepicker-popup-border: 1px solid $border-light !default;
+$datepicker-input-border-style: none !default;
+$datepicker-calendar-border-style: none !default;
+$datepicker-icon-color: $secondary-text-color !default;
+$datepicker-active-icon-color: $datepicker-icon-color !default;
+$datepicker-icon-active-bg-color: $secondary-bg-color-pressed !default;
+$datepicker-active-border-color: $border !default;
+$datepicker-popup-box-shadow: $shadow-lg !default;
+$datepicker-overlay: rgba($black, .5) !default;
+$datepicker-icon-hover-color: $secondary-text-color-hover !default;
+$datepicker-popup-bg-color: $flyout-bg-color !default;
+$datepicker-othermonth-row: none !default;
+$datepicker-modal-header-bg: $datepicker-popup-bg-color !default;
+$datepicker-modal-header-color: $content-bg-color-alt2 !default;
+$model-year-font-size: 18px !default;
+$model-header-year-margin: 7vh 0 0 0 !default;
+$model-header-day-margin: 0 !default;
+$model-year-font-weight: 500 !default;
+$model-year-line-height: 32px !default;
+$model-month-font-size: 18px !default;
+$model-month-font-weight: 500 !default;
+$model-month-line-height: 32px !default;
+$model-portrait-header-padding: 16px !default;
+$model-portrait-month-header-padding: 0 !default;
+
+$modal-header-border-style: solid !default;
+$model-header-border-width: 1px 0 !default;
+$model-header-border-color: $border-light !default;
+
+// Touch model popup cancel icon style
+$model-portrait-cancel-icon-float-style: left !default;
+$model-portrait-cancel-icon-padding: 2px !default;
+$model-portrait-prev-icon-margin: 7vw !default;
+$model-portrait-next-icon-margin: 3vw !default;
+$model-portrait-header-title-margin: -10vw !default;
+$model-portrait-header-title-position: absolute !default;
+$model-portrait-header-title-text: center !default;
+$model-portrait-header-title-width: 50vw !default;
+$model-portrait-cancel-icon-color: $icon-color !default;
+
+//Touch model popup today styles
+$model-portrait-today-float-style: right !default;
+$model-portrait-footer-display-style: none !default;
+
+// Touch model popup styles
+$model-portrait-header-height: 20vh !default;
+$model-portrait-header-month-height: 10vh !default;
+$model-portrait-calendar-container-height: 85vh !default;
+$model-portrait-calendar-min-height: 100vmin !default;
+$model-portrait-calendar-min-width: 100vmin !default;
+$model-portrait-calendar-height: 100vh !default;
+$model-portrait-calendar-content-height: 70vh !default;
+$model-portrait-calendar-tabel-height: 70vh !default;
+
+// Touch model popup landscape styles
+$datepicker-model-popup-landscape-max-width: 100vw !default;
+$model-landscape-header-height: 30vh !default;
+$model-landscape-calendar-content-height: 60vh !default;
+$model-landscape-header-year-margin: 8vh 0 0 0 !default;
+$model-landscape-prev-icon-margin: 80vw !default;
+
+//enddefault

@@ -1,0 +1,13 @@
+@import 'ej2-base/styles/bootstrap5.scss';
+@import 'ej2-buttons/styles/bootstrap5.scss';
+@import 'ej2-popups/styles/bootstrap5.scss';
+@import 'ej2-inputs/styles/bootstrap5.scss';
+@import 'ej2-lists/styles/bootstrap5.scss';
+@import 'ej2-splitbuttons/styles/bootstrap5.scss';
+
+// Local dependent component styles from current repository
+@import '../../styles/calendar/bootstrap5.scss';
+@import '../../styles/datepicker/bootstrap5.scss';
+
+// Your main component styles from current repository 
+@import '../../styles/bootstrap5.scss';
